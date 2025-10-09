@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universidad>
+  <facultades>
+    <facultad>
+      <carreras>
+        <carrera>
+          <estudiantes>
+            <estudiante>
+              <nombre></nombre>
+              <edad></edad>
+              <matricula></matricula>
+              <email></email>
+            </estudiante>
+          </estudiantes>
+        </carrera>
+      </carreras>
+    </facultad>
+  </facultades>
+</universidad>
