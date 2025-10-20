@@ -1,19 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <universidad>
-  <facultades>
-    <facultad>
-      <carreras>
-        <carrera>
-          <estudiantes>
+    <facultad nombre="Facultad de Ingeniería">
+        <carrera nombre="Ingeniería Informática">
             <estudiante>
-              <nombre></nombre>
-              <edad></edad>
-              <matricula></matricula>
-              <email></email>
+                <edad>26</edad>
+                <email>pepepepito@universidad.org</email>
+                <matricula>AD-ARC-2025-014</matricula>
+                <nombre>Pepe</nombre>
             </estudiante>
-          </estudiantes>
+            <estudiante>
+                <edad>26</edad>
+                <email>manolo@universidad.org</email>
+                <matricula>AD-ARC-2025-015</matricula>
+                <nombre>Manolo</nombre>
+            </estudiante>
+            <estudiante>
+                <edad>43</edad>
+                <email>antonio@universidad</email>
+                <matricula>AD-ARC-2025-028</matricula>
+                <nombre>Antonio</nombre>
+            </estudiante>
         </carrera>
-      </carreras>
     </facultad>
-  </facultades>
 </universidad>

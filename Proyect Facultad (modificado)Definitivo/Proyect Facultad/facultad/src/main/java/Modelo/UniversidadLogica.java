@@ -10,7 +10,7 @@ import java.io.File;
  */
 
 public class UniversidadLogica {
-    private final String XML_FILE = "universidad.xml";
+    private final String XML_FILE = "universidad.xml";  
     private Universidad universidad;
 
     public UniversidadLogica() {
