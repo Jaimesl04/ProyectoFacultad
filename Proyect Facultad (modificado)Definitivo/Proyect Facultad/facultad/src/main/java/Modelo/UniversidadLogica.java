@@ -9,11 +9,11 @@ import java.io.File;
  * y gestiona las operaciones sobre los Estudiantes
  */
 
-public class UniversidadControl {
+public class UniversidadLogica {
     private final String XML_FILE = "universidad.xml";
     private Universidad universidad;
 
-    public UniversidadControl() {
+    public UniversidadLogica() {
         universidad = leerUniversidad();
     }
 

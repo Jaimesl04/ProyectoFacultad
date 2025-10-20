@@ -1,16 +1,16 @@
 package Controlador;
 
 import Vista.MenuVista;
-import Modelo.UniversidadControl;
+import Modelo.UniversidadLogica;
 import Modelo.Estudiante;
 
 public class UniversidadControlador {
     private MenuVista vista;
-    private UniversidadControl modelo;
+    private UniversidadLogica modelo;
 
     public UniversidadControlador() {
         this.vista = new MenuVista();
-        this.modelo = new UniversidadControl();
+        this.modelo = new UniversidadLogica();
     }
 
     public void controlarVista() {
