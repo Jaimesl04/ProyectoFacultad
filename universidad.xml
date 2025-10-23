@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <universidad>
+    <nombre>Upo</nombre>
+    <direccion>Calle victoria dominguez cerrato</direccion>
+    <presupuesto>784000.0</presupuesto>
     <facultad nombre="Facultad de Ingeniería">
         <carrera nombre="Ingeniería Informática">
             <estudiante>

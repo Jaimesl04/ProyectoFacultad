@@ -2,10 +2,6 @@ package Modelo;
 
 import jakarta.xml.bind.annotation.*;
 
-/**
- * Clase estudiante con sus atributos que se definen en el Universidad.xml
- */
-
 @XmlRootElement(name = "estudiante")
 public class Estudiante {
     private String nombre;
