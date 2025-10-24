@@ -4,6 +4,10 @@ import jakarta.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * Representa una facultad dentro de una Universidad que contiene una lista de carreras
+ */
+
 @XmlRootElement(name = "facultad")
 public class Facultad {
     private String nombre;

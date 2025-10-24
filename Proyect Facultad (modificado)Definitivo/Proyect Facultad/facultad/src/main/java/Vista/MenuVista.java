@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Locale;
 
+/*
+ * Clase que se encarga de la interfaz de usuario
+ */
+
 public class MenuVista {
     private Scanner sc;
 
@@ -13,6 +17,7 @@ public class MenuVista {
         Locale.setDefault(Locale.US);
     }
 
+    // Muestra el menu principal con las opciones disponibles
     public void mostrarMenu() {
         System.out.println("\n=== MENÚ UNIVERSITARIO ===");
         System.out.println("1. Leer Estudiantes");
@@ -27,14 +32,17 @@ public class MenuVista {
         System.out.print("Seleccione una opción: ");
     }
 
+    // Lee la opcion seleccionada
     public int leerOpcion() {
         return Integer.parseInt(sc.nextLine());
     }
 
+    // Muestra un mensaje
     public void mostrarMensaje(String mensaje) {
         System.out.println(">>> " + mensaje);
     }
 
+    // Solicita los datos necesarios para crear un estudiante nuevo
     public Estudiante pedirDatosEstudiante() {
         System.out.println("\n--- AGREGAR NUEVO ESTUDIANTE ---");
         System.out.print("Nombre: ");
@@ -49,11 +57,13 @@ public class MenuVista {
         return new Estudiante(nombre, edad, matricula, email);
     }
 
+    // Solicita la matricula del estudiante para hacer busquedas
     public String pedirMatricula() {
         System.out.print("Introduce matrícula del estudiante: ");
         return sc.nextLine();
     }
 
+    // Muestra los datos actuales del estudiante y solicita valores para los nuevos datos
     public Estudiante pedirDatosModificacion(Estudiante estudianteActual) {
         System.out.println("\n--- MODIFICAR ESTUDIANTE ---");
         System.out.println("Estudiante actual: " + estudianteActual);
@@ -67,6 +77,7 @@ public class MenuVista {
         return new Estudiante(nombre, edad, estudianteActual.getMatricula(), email);
     }
 
+    // Muestra una lista de estudiantes
     public void mostrarEstudiantes(List<Estudiante> estudiantes) {
         if (estudiantes.isEmpty()) {
             System.out.println("No hay estudiantes para mostrar.");
@@ -79,6 +90,7 @@ public class MenuVista {
         }
     }
 
+    // Muestra la estructura completa de la universidad
     public void mostrarEstructuraCompleta(String estructura) {
         System.out.println("\n--- ESTRUCTURA UNIVERSITARIA ---");
         if (estructura.contains("No hay datos")) {
@@ -88,11 +100,13 @@ public class MenuVista {
         }
     }
 
+    // Muestra la informacion de la universidad
     public void mostrarInfoUniversidad(String info) {
         System.out.println("\n--- INFORMACIÓN DE LA UNIVERSIDAD ---");
         System.out.println(info);
     }
 
+    // Muestra el presupuesto calculado
     public void mostrarPresupuesto(double presupuesto) {
         System.out.println("\n--- PRESUPUESTO UNIVERSITARIO ---");
         System.out.printf(Locale.US, "Presupuesto total calculado: %,.2f%n", presupuesto );
@@ -103,6 +117,7 @@ public class MenuVista {
         System.out.println("- Coste por estudiante");
     }
 
+    // Solicita los parametros personalizados para calcular el presupuesto
     public double[] pedirParametrosPresupuesto() {
         System.out.println("\n--- CÁLCULO PERSONALIZADO DE PRESUPUESTO ---");
         System.out.print("Coste base de la universidad (€): ");
@@ -117,6 +132,7 @@ public class MenuVista {
         return new double[]{costeBase, costeFacultad, costeCarrera, costeEstudiante};
     }
 
+    // Solicita los datos nuevos de la universidad
     public String[] pedirDatosUniversidad() {
         System.out.println("\n--- MODIFICAR DATOS DE LA UNIVERSIDAD ---");
         System.out.print("Nuevo nombre de la universidad: ");

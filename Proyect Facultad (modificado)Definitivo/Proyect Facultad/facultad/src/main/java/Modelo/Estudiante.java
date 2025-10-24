@@ -2,6 +2,10 @@ package Modelo;
 
 import jakarta.xml.bind.annotation.*;
 
+/*
+ * Representa un estudiante con sus datos personales y academicos
+ */
+
 @XmlRootElement(name = "estudiante")
 public class Estudiante {
     private String nombre;
